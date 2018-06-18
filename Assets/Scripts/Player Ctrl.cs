@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenuUICtrl : MonoBehaviour {
+public class PlayerCtrl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
