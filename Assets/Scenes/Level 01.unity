@@ -18038,7 +18038,7 @@ GameObject:
   - component: {fileID: 1723162000}
   - component: {fileID: 1723162001}
   m_Layer: 0
-  m_Name: Idle (5)
+  m_Name: Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18094,7 +18094,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d1841d9577504e04a9a59e5a6954c1dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18112,7 +18112,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1723161995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6711974, y: -2.119, z: 0}
+  m_LocalPosition: {x: -5.6711974, y: -3.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18132,12 +18132,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 3
+  m_Material: {fileID: 6200000, guid: 5d552c66e16e16142b182377208b2727, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1723162000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18171,9 +18171,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1723161995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39687a3f0928a0b419a6bdc27f5e1dde, type: 3}
+  m_Script: {fileID: 11500000, guid: cf1c531cef6d65940b98fdea6f17bf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalSpeed: 10
+  jumpSpeed: 600
 --- !u!1 &1816894306
 GameObject:
   m_ObjectHideFlags: 0
