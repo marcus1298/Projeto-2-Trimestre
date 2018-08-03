@@ -17403,6 +17403,7 @@ GameObject:
   - component: {fileID: 738220019}
   - component: {fileID: 738220018}
   - component: {fileID: 738220022}
+  - component: {fileID: 738220023}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -17484,8 +17485,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1723161998}
   damping: 1
+  lookAheadFactor: 3
+  lookAheadReturnSpeed: 0.5
+  lookAheadMoveThreshold: 0.1
+--- !u!114 &738220023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 738220017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1723161998}
+  damping: 0.3
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
@@ -18212,6 +18229,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  delayForDoubleJump: 0.2
 --- !u!1 &1816894306
 GameObject:
   m_ObjectHideFlags: 0
