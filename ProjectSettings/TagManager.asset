@@ -7,6 +7,7 @@ TagManager:
   - Background
   - Ground
   - Collectibles
+  - Coin
   layers:
   - Default
   - TransparentFX
