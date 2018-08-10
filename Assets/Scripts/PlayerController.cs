@@ -93,12 +93,14 @@ public float delayForDoubleJump = 0.2f;
 	void jump(){
 		if(isGrounded){
 		isJumping = true;
+		AudioManager.instance.PlayJumpSound(gameObject);
 		rb.AddForce(new Vector2(0f, jumpSpeed));
 		anim.SetInteger("State",1);
 		Invoke("EnableDoubleJump", delayForDoubleJump);
 		}
 		if(canDoubleJump & !isGrounded){
 			rb.velocity = Vector2.zero;
+			AudioManager.instance.PlayJumpSound(gameObject);
 			rb.AddForce(new Vector2(0f, jumpSpeed));
 			anim.SetInteger("State",1);
 			canDoubleJump = false;
@@ -117,6 +119,7 @@ public float delayForDoubleJump = 0.2f;
 	}
 		void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.CompareTag("Coin")){
+			AudioManager.instance.PlayCoinPickupSound(other.gameObject);
 			SFXManager.instance.ShowCoinParticles(other.gameObject);
 			Destroy(other.gameObject);
 		}
