@@ -113,5 +113,11 @@ public float delayForDoubleJump = 0.2f;
 		if(other.gameObject.layer== LayerMask.NameToLayer("Ground")){
 				isJumping = false;
 		}
+
 	}
+		void OnTriggerEnter2D(Collider2D other){
+		if(other.gameObject.CompareTag("Coin")){
+			Destroy(other.gameObject);
+		}
+		}
 }
