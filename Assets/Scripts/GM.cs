@@ -6,7 +6,7 @@ public class GM : MonoBehaviour {
 
 	// Use this for initialization
 	public static GM instance = null;
-	public float yMinLive = -6.5f;
+	public float yMinLive = -10f;
 	public Transform spawnPoit;
 	public GameObject playerPrefab;
 	public PlayerController player;
@@ -17,12 +17,9 @@ public class GM : MonoBehaviour {
 	void Awake(){
 	if(instance == null){
 		instance = this;
-	}	
-	else if(instance != this){
-		Destroy(gameObject);
+		}	
 	}
-	DontDestroyOnLoad(gameObject);
-	}
+	
 
 	void Start () {
 		if(player==null){
