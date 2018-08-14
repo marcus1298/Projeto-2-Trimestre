@@ -121,6 +121,7 @@ public float delayForDoubleJump = 0.2f;
 		if(other.gameObject.CompareTag("Coin")){
 			AudioManager.instance.PlayCoinPickupSound(other.gameObject);
 			SFXManager.instance.ShowCoinParticles(other.gameObject);
+			GM.instance.IncrementCoinCount();
 			Destroy(other.gameObject);
 		}
 		}
