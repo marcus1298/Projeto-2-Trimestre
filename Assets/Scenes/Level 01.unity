@@ -9607,6 +9607,12 @@ MonoBehaviour:
     type: 2}
   player: {fileID: 0}
   timeToRespaw: 2
+  ui:
+    hud:
+      txtCoinCount: {fileID: 1959167149}
+      txtLifeCount: {fileID: 1896067646}
+      txtTimer: {fileID: 449363867}
+      hudPanel: {fileID: 0}
 --- !u!1 &580155396
 GameObject:
   m_ObjectHideFlags: 0
