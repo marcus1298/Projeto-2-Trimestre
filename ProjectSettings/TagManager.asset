@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Collectibles
   - Coin
+  - MovingPlataform
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
