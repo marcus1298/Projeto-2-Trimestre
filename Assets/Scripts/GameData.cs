@@ -6,6 +6,6 @@ using System;
 [Serializable]
 
 public class GameData {
-	public int coinCount;
+	public int coinCount = 0;
 	
 }

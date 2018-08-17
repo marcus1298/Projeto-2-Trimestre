@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+
 public class GM : MonoBehaviour {
 
 	// Use this for initialization
 	public static GM instance = null;
 	public float yMinLive = -10f;
-	public Transform spawnPoit;
+	public Transform spawnPoint;
 	public GameObject playerPrefab;
 	public PlayerController player;
 
@@ -41,14 +41,16 @@ public class GM : MonoBehaviour {
 	
 
 	void DisplayHudData(){
-	ui.hud.txtCoinCout.text = "x " + data.coinCount;
+	ui.hud.txtCoinCount.text = "x " + data.coinCount;
 	}
 	public void IncrementCoinCount()
 	{
 		data.coinCount++;
 	}
 
-
+	public void RespawnPlayer(){
+		Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+	}
 	
 	public void KillPlayer(){
 		if(player!=null){
@@ -56,7 +58,5 @@ public class GM : MonoBehaviour {
 			Invoke("RespawnPlayer", timeToRespaw);
 		}
 	}
-	public void RespawnPlayer(){
-		Instantiate(playerPrefab, spawnPoit.position, spawnPoit.rotation);
-	}
+	
 }

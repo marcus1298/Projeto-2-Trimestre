@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 
 public class AudioManager : MonoBehaviour {
 
-		public static AudioManager instance;
+	public static AudioManager instance;
 
 	public AudioSFX audioSFX;
 	public AudioPlayer audioPlayer;
@@ -27,3 +26,4 @@ public class AudioManager : MonoBehaviour {
 		AudioSource.PlayClipAtPoint(audioPlayer.jump, obj.transform.position);
 	}
 }
+ 
