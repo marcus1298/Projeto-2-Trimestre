@@ -14,5 +14,14 @@ using UnityEngine.UI;
  	[Header("Other")]
  	public GameObject hudPanel;
 	}
+	[Serializable]
+ 	public class GameOver{
+ 	[Header("Text")]
+	public Text txtTimer;
+	public Text txtCoinCount;
+ 	[Header("Other")]
+ 	public GameObject gameOverPanel;
+	}
  	public HUD hud;
+	public GameOver gameOver;
 }
