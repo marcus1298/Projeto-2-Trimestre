@@ -9806,7 +9806,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 1478267112691406, guid: 5b19d329c4be37348b9c63eed0c9ebb2,
     type: 2}
   timeToRespaw: 2
-  maxTime: 5
+  maxTime: 120
   ui:
     hud:
       txtCoinCount: {fileID: 1959167149}

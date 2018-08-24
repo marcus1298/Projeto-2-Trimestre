@@ -58,19 +58,24 @@ public class GM : MonoBehaviour {
 
 	void DisplayHudData(){
 	ui.hud.txtCoinCount.text = "x " + data.coinCount;
+	ui.hud.txtLifeCount.text = "x " + data.lifeCount;
 	ui.hud.txtTimer.text = "Timer: " + timeLeft.ToString("F1");
 	}
 	public void IncrementCoinCount()
 	{
 		data.coinCount++;
 	}
-
+	public void DecrementLives(){
+		data.lifeCount--;
+	}
 
 	
 	public void KillPlayer(){
 		if(player!=null){
 			Destroy(player.gameObject);
-			Invoke("RespawnPlayer", timeToRespaw);
+			DecrementLives();
+			if(data.lifeCount>0){
+				Invoke("RespawnPlayer", timeToRespaw);}
 		}
 	}
 	public void ExpirePlayer(){
