@@ -22,6 +22,15 @@ using UnityEngine.UI;
  	[Header("Other")]
  	public GameObject gameOverPanel;
 	}
+	[Serializable]
+ 	public class LevelComplete{
+ 	[Header("Text")]
+	public Text txtTimer;
+	public Text txtCoinCount;
+ 	[Header("Other")]
+ 	public GameObject levelCompletePanel;
+	}
  	public HUD hud;
 	public GameOver gameOver;
+	public LevelComplete levelComplete;
 }
