@@ -10,6 +10,7 @@ TagManager:
   - Coin
   - MovingPlataform
   - MovingPlatform
+  - Turn
   layers:
   - Default
   - TransparentFX
